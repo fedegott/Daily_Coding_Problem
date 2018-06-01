@@ -10,13 +10,13 @@ Hint: Try preprocessing the dictionary into a more efficient data structure to s
 
 import urllib3
 from bs4 import BeautifulSoup
-
+# from time_decorator import  timing_function
 
 url = 'https://www.merriam-webster.com/browse/thesaurus/'
 query = 'de'
 
 
-
+# @timing_function
 def find_query(query,url):
 
     #Find the number of pages for the letter

@@ -12,10 +12,14 @@ query_strings1 = ['dog', 'deer', 'deal']
 string_2 = 'tor'
 query_strings2 = ['tormentor','torpid', 'tortous', 'tory','toss', 'tomorrow', 'tuesday']
 
+
 def autocomplete_system(string_, query_strings):
     result =[]
     for i in query_strings:
          if string_ == i[:len(string_)]: # this the most important part
+
+             # alternatively can use  if i.startswith(string_): append
+
              result.append(i)
 
     return result
